@@ -1,0 +1,140 @@
+.hero {
+	background-image: url('../images/hero-bg.png');
+	background-repeat: no-repeat;
+	width: 100%;
+	background-position: calc(50% - 45px) calc(50% - 160px);
+}
+
+.hero__inner {
+	padding: 153px 37px 311px 672px;
+}
+
+.hero__title {
+	margin: 0;
+	margin-bottom: 29px;
+	font-weight: 700;
+	font-size: 70px;
+	line-height: 64px;
+	color: #333333;
+}
+
+.title-color {
+	color: #78c0de;
+}
+
+.hero__text-wrapper {
+	width: 100%;
+	max-width: 495px;
+}
+
+.hero__text {
+	margin: 0;
+	margin-bottom: 38px;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 21px;
+	color: #949494;
+}
+
+.hero__link {
+	display: block;
+	width: 100%;
+	max-width: 181px;
+	padding: 15px;
+	text-decoration: none;
+	text-align: center;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 21px;
+	color: #ffffff;
+	background-color: #333333;
+	border-radius: 3px;
+	transition: all 0.3s ease;
+
+	&:hover {
+		background-color: #ffbd54;
+		color: #333333;
+	}
+
+	&:active {
+		background-color: #ffbd54;
+		color: #333333;
+		opacity: 0.6;
+	}
+}
+
+.hero__block-wrapper {
+	position: relative;
+	width: 100%;
+	max-width: 920px;
+	padding: 27px 0 19px;
+	margin: 0 auto;
+	margin-bottom: 35px;
+}
+
+.hero__line-top {
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	margin: 0 auto;
+	width: 140px;
+	height: 0;
+	border: 1px solid #dbdbdb;
+	background-color: #dbdbdb;
+}
+
+.hero__block {
+	position: relative;
+	padding: 0 55px;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 26px;
+	text-align: center;
+	color: #949494;
+
+	&::before {
+		position: absolute;
+		top: -10px;
+		left: -10px;
+		width: 40px;
+		height: 40px;
+		background-image: url('../images/left.svg');
+		background-repeat: no-repeat;
+		background-size: 100%;
+		content: '';
+	}
+
+	&::after {
+		position: absolute;
+		bottom: -5px;
+		right: -10px;
+		width: 40px;
+		height: 40px;
+		background-image: url('../images/right.svg');
+		background-repeat: no-repeat;
+		background-size: 100%;
+		content: '';
+	}
+}
+
+.hero__line-bottom {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	margin: 0 auto;
+	width: 140px;
+	height: 0;
+	border: 1px solid #dbdbdb;
+	background-color: #dbdbdb;
+}
+
+.hero__bottom-title {
+	margin: 0;
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 26px;
+	text-align: center;
+	color: #333333;
+}

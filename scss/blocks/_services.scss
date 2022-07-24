@@ -1,0 +1,274 @@
+.services {
+	padding: 191px 0 127px;
+}
+
+.services__title {
+	margin: 0;
+	margin-bottom: 80px;
+	text-align: center;
+	font-weight: 700;
+	font-size: 48px;
+	line-height: 54px;
+	color: #333333;
+}
+
+.list-btn__left {
+	position: relative;
+	top: 150px;
+	left: -20px;
+	padding: 12px 18px;
+	background-color: transparent;
+	border: 0;
+	transition: all 0.3s ease;
+
+	&:hover {
+		background-color: #f9f9f9;
+		opacity: 0.6;
+	}
+
+	&:active {
+		opacity: 0.4;
+	}
+}
+
+.services__list {
+	position: relative;
+	@include flex-starter;
+	justify-content: center;
+	@include list-styles;
+}
+
+.services__item {
+	position: relative;
+	width: 100%;
+	max-width: 193px;
+	padding: 129px 32px 39px 35px;
+	background-color: #ffffff;
+	border: 1px solid #f3f3f3;
+	border-radius: 5px;
+	transition: all 0.3s ease;
+
+	&::before {
+		position: absolute;
+		top: 30px;
+		right: 0;
+		left: 0;
+		margin: 0 auto;
+		width: 54px;
+		height: 78px;
+		background-image: url('../images/doctor.svg');
+		background-repeat: no-repeat;
+		background-size: 100%;
+		content: '';
+	}
+
+	&:hover {
+		opacity: 0.8;
+	}
+
+	&:active {
+		opacity: 0.6;
+	}
+}
+
+.services__item:nth-child(2)::before {
+	width: 62px;
+	height: 77px;
+	background-image: url('../images/filled.svg');
+}
+
+.services__item:nth-child(3)::before {
+	width: 72px;
+	height: 78px;
+	background-image: url('../images/dog.svg');
+}
+
+.services__item:nth-child(4)::before {
+	width: 76px;
+	height: 76px;
+	background-image: url('../images/dermotolog.svg');
+}
+
+.services__item:nth-child(5)::before {
+	width: 78px;
+	height: 78px;
+	background-image: url('../images/mikroskop.svg');
+}
+
+.services__item:nth-child(6)::before {
+	width: 76px;
+	height: 76px;
+	background-image: url('../images/dogs.svg');
+}
+
+.services__item:nth-child(1) {
+	padding: 129px 32px 56px 35px;
+	border-radius: 5px 5px 0px 0px;
+	border-bottom: transparent;
+}
+
+.services__item:nth-child(4) {
+	padding: 151px 32px 39px 35px;
+}
+
+.services__item:nth-child(6) {
+	padding: 151px 32px 39px 35px;
+}
+
+.services__item + .services__item {
+	margin-left: 13px;
+}
+
+.services__item-link {
+	display: inline-block;
+	text-decoration: none;
+	transition: all 0.3s ease;
+}
+
+.services__item-title {
+	margin: 0;
+	text-align: center;
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 22px;
+	color: #333333;
+}
+
+.services-content-wrapper {
+	@include flex-starter;
+	margin: 0 auto;
+	width: 100%;
+	max-width: 1223px;
+	justify-content: center;
+	padding: 41px 0;
+	background-color: #ffffff;
+	border: 1px solid #f3f3f3;
+	border-radius: 0px 5px 5px 5px;
+	border-top: transparent;
+}
+
+.content-warpper__img {
+	margin-right: 28px;
+}
+
+.content__img {
+	border-radius: 3px;
+}
+
+.services__content {
+	width: 100%;
+	max-width: 492px;
+}
+
+.content__title {
+	margin: 0;
+	margin-bottom: 18px;
+	font-weight: 500;
+	font-size: 36px;
+	line-height: 20px;
+	color: #333333;
+}
+
+.content__text-top {
+	margin: 0;
+	margin-bottom: 9px;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 20px;
+	color: #949494;
+}
+
+.content__text-bottom {
+	margin: 0;
+	margin-bottom: 34px;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 20px;
+	color: #949494;
+}
+
+.content__link {
+	position: relative;
+	display: inline-block;
+	width: 100%;
+	max-width: 185px;
+	padding: 15px;
+	text-decoration: none;
+	text-align: center;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 21px;
+	color: #ffffff;
+	background-color: #ffbd54;
+	border-radius: 3px;
+	transition: all 0.3s ease;
+
+	&::before {
+		position: absolute;
+		top: 16px;
+		left: 25px;
+		width: 22px;
+		height: 21px;
+		background-image: url('../images/money.svg');
+		background-repeat: no-repeat;
+		background-size: 100%;
+		content: '';
+	}
+
+	&:hover {
+		background-color: #333333;
+		color: #ffbd54;
+	}
+
+	&:active {
+		opacity: 0.6;
+	}
+}
+
+.content__link--active {
+	width: 100%;
+	max-width: 241px;
+	margin-left: 21px;
+	background-color: #333333;
+	transition: all 0.3s ease;
+
+	&::before {
+		position: absolute;
+		top: 16px;
+		left: 25px;
+		width: 21px;
+		height: 21px;
+		background-image: url('../images/document.svg');
+		background-repeat: no-repeat;
+		background-size: 100%;
+		content: '';
+	}
+
+	&:hover {
+		background-color: #ffbd54;
+		color: #333333;
+	}
+
+	&:active {
+		opacity: 0.6;
+	}
+}
+
+.list-btn__right {
+	position: relative;
+	top: -540px;
+	left: 1290px;
+	padding: 12px 18px;
+	background-color: transparent;
+	border: 0;
+	transition: all 0.3s ease;
+
+	&:hover {
+		background-color: #f9f9f9;
+		opacity: 0.6;
+	}
+
+	&:active {
+		opacity: 0.4;
+	}
+}

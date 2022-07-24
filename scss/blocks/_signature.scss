@@ -1,0 +1,78 @@
+.signature {
+	padding: 198px 0 155px 297px;
+	background-image: url('../images/dog-look.png'), url('../images/Mask.png');
+	background-repeat: no-repeat;
+	background-size: 613px 481px, 100%;
+	background-position: calc(50% + 350px) calc(50% - 13px), center center;
+}
+
+.signature__title {
+	margin: 0;
+	margin-bottom: 42px;
+	font-weight: 700;
+	font-size: 48px;
+	line-height: 20px;
+	display: flex;
+	align-items: center;
+	color: #ffffff;
+}
+
+.signature__input {
+	padding: 18px 0 12px 22px;
+	margin-right: 21px;
+	width: 100%;
+	max-width: 335px;
+	background-color: #ffffff;
+	border-radius: 5px;
+	border: 0;
+
+	&::placeholder {
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 20px;
+	}
+
+	&:focus {
+		outline-color: #ffbd54;
+	}
+
+	&:focus::placeholder {
+		color: #333333;
+	}
+}
+
+.signature__btn {
+	display: inline-block;
+	width: 100%;
+	max-width: 188px;
+	padding: 15px 0 14px;
+	border: 0;
+	background: #333333;
+	border-radius: 3px;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 21px;
+	color: #ffffff;
+	transition: all 0.3s ease;
+
+	&:hover {
+		background-color: #ffbd54;
+		color: #333333;
+	}
+
+	&:active {
+		opacity: 0.6;
+	}
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+	only screen and (min--moz-device-pixel-ratio: 2),
+	only screen and (-o-min-device-pixel-ratio: 2/1),
+	only screen and (min-device-pixel-ratio: 2),
+	only screen and (min-resolution: 192dpi),
+	only screen and (min-resolution: 2dppx) {
+	.signature {
+		background-image: url('../images/dog-look@2x.png'),
+			url('../images/Mask@2x.png');
+	}
+}
